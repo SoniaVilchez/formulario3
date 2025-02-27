@@ -1,0 +1,47 @@
+body { font-family: Rockwell, sans-serif; margin: 20px; }
+h1 { text-align: center; color: #333; }
+
+/* Caja de fondo pastel alrededor del formulario */
+.form-container {
+    background-color: #f7f7f7;  /* Fondo pastel */
+    padding: 20px;              /* Espaciado interno */
+    margin: auto;               /* Centra el formulario */
+    max-width: 500px;           /* Ancho máximo */
+    border-radius: 10px;        /* Bordes redondeados */
+    border: 1px solid #ddd;     /* Borde sutil */
+}
+
+/* Estilo de los campos de entrada */
+label { display: block; margin-top: 10px; }
+input, textarea {
+    width: 96%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #fff;   /* Fondo blanco */
+    border: 1px solid #ddd;   /* Borde sutil */
+    border-radius: 4px;       /* Bordes redondeados */
+}
+
+/* Estilo cuando los campos están enfocados */
+input:focus, textarea:focus {
+    background-color: #fff;     /* Fondo blanco al estar enfocado */
+    border-color: #007BFF;      /* Borde azul cuando está enfocado */       
+}
+
+/* Estilo de los mensajes de error */
+.error { color: red; font-size: 0.9em; }
+
+/* Estilo del botón */
+button { 
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 15px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+/* Efecto hover del botón */
+button:hover { background-color: #0056b3; }

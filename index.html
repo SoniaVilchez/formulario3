@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Inclusión de Empresas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <div class="form-container">
+        <form id="formulario">
+            <label for="nombre_apellidos">Nombre y Apellidos:</label>
+            <input type="text" id="nombre_apellidos" name="nombre_apellidos" required>
+            <span class="error" id="error-nombre_apellidos"></span>
+            
+            <label for="nombre_empresa">Nombre de la Empresa:</label>
+            <input type="text" id="nombre_empresa" name="nombre_empresa" required>
+            <span class="error" id="error-nombre_empresa"></span>
+            
+            <label for="cif">CIF:</label>
+            <input type="text" id="cif" name="cif" pattern="[A-HJNP-SUVW]{1}\d{7}[A-J0-9]{1}" required>
+            <span class="error" id="error-cif"></span>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="\d{9}" required>
+            <span class="error" id="error-telefono"></span>
+            
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+            <span class="error" id="error-comentario"></span>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
